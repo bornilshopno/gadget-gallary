@@ -1,0 +1,370 @@
+[
+    {
+        "product_id": "MOB001",
+        "product_title": "Galaxy S21 Ultra",
+        "product_image": "https://i.ibb.co.com/7kf9gnT/Galaxy-S21-Ultra.webp",
+        "category": "Mobile Phone",
+        "price": 1199.99,
+        "description": "Samsung Galaxy S21 Ultra with a 108MP camera and 6.8-inch display.",
+        "specification": {
+            "screen_size": "6.8 inches",
+            "camera": "108MP",
+            "battery": "5000mAh",
+            "processor": "Exynos 2100",
+            "RAM": "12GB",
+            "storage": "128GB"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "MOB002",
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://i.ibb.co.com/brwH0Q2/i-Phone-13-Pro.jpg",
+        "category": "Mobile Phone",
+        "price": 999.99,
+        "description": "Apple iPhone 13 Pro with 5G and Super Retina XDR display.",
+        "specification": {
+            "screen_size": "6.1 inches",
+            "camera": "12MP triple camera",
+            "battery": "3095mAh",
+            "processor": "A15 Bionic chip",
+            "RAM": "6GB",
+            "storage": "256GB"
+        },
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "BUD001",
+        "product_title": "Sony WF-1000XM4",
+        "product_image": "https://i.ibb.co.com/wQ9wn53/Sony-WF-1000-XM4.jpg",
+        "category": "Airbuds",
+        "price": 279.99,
+        "description": "Sony WF-1000XM4 wireless noise-canceling earbuds.",
+        "specification": {
+            "noise_cancellation": "Yes",
+            "battery_life": "8 hours (earbuds), 24 hours (with case)",
+            "water_resistant": "IPX4"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "BUD002",
+        "product_title": "Apple AirPods Pro",
+        "product_image": "https://i.ibb.co.com/FY6WGNj/Apple-Air-Pods-Pro.png",
+        "category": "Airbuds",
+        "price": 249.99,
+        "description": "Apple AirPods Pro with active noise cancellation and spatial audio.",
+        "specification": {
+            "noise_cancellation": "Yes",
+            "battery_life": "5 hours (earbuds), 24 hours (with case)",
+            "water_resistant": "IPX4"
+        },
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "product_id": "SW001",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/y0fqKLw/Apple-Watch-Series-7.jpg",
+        "category": "Smartwatch",
+        "price": 399.99,
+        "description": "Apple Watch Series 7 with larger display and advanced health features.",
+        "specification": {
+            "screen_size": "1.9 inches",
+            "battery_life": "18 hours",
+            "water_resistant": "Yes",
+            "features": ["ECG", "Blood Oxygen Sensor", "Heart Rate Monitor"]
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "SW002",
+        "product_title": "Samsung Galaxy Watch 4",
+        "product_image": "https://i.ibb.co.com/k46zx5m/Samsung-Galaxy-Watch-4.webp",
+        "category": "Smartwatch",
+        "price": 249.99,
+        "description": "Samsung Galaxy Watch 4 with Wear OS and health tracking.",
+        "specification": {
+            "screen_size": "1.4 inches",
+            "battery_life": "40 hours",
+            "water_resistant": "Yes",
+            "features": ["ECG", "Heart Rate Monitor", "Sleep Tracking"]
+        },
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "SPK001",
+        "product_title": "JBL Flip 5",
+        "product_image": "https://i.ibb.co.com/Kwn0bq8/JBL-Flip-5.jpg",
+        "category": "Bluetooth Speaker",
+        "price": 119.99,
+        "description": "JBL Flip 5 portable waterproof Bluetooth speaker.",
+        "specification": {
+            "battery_life": "12 hours",
+            "water_resistant": "IPX7",
+            "frequency_response": "65 Hz – 20 kHz"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "SPK002",
+        "product_title": "Bose SoundLink Revolve+",
+        "product_image": "https://i.ibb.co.com/7Y9mQN8/Bose-Sound-Link-Revolve.jpg",
+        "category": "Bluetooth Speaker",
+        "price": 299.99,
+        "description": "Bose SoundLink Revolve+ with 360-degree sound.",
+        "specification": {
+            "battery_life": "16 hours",
+            "water_resistant": "IPX4",
+            "frequency_response": "70 Hz – 20 kHz"
+        },
+        "availability": false,
+        "rating": 4.7
+    },
+    {
+        "product_id": "CAM001",
+        "product_title": "Logitech C920 HD Pro Webcam",
+        "product_image": "https://i.ibb.co.com/TBhSCBn/Logitech-C920-HD-Pro-Webcam.jpg",
+        "category": "Webcam",
+        "price": 79.99,
+        "description": "Logitech C920 HD Pro with 1080p resolution and dual mics.",
+        "specification": {
+            "resolution": "1080p",
+            "microphone": "Dual stereo mics",
+            "focus": "Autofocus"
+        },
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "CAM002",
+        "product_title": "Razer Kiyo",
+        "product_image": "https://i.ibb.co.com/Jn6LX0S/Razer-Kiyo.webp",
+        "category": "Webcam",
+        "price": 99.99,
+        "description": "Razer Kiyo webcam with ring light for streaming.",
+        "specification": {
+            "resolution": "1080p",
+            "microphone": "Integrated",
+            "light": "Adjustable ring light"
+        },
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "MOU001",
+        "product_title": "Logitech MX Master 3",
+        "product_image": "https://i.ibb.co.com/2N199TG/Logitech-MX-Master-3.jpg",
+        "category": "Wireless Mouse",
+        "price": 99.99,
+        "description": "Logitech MX Master 3 with ergonomic design and customizable buttons.",
+        "specification": {
+            "sensor": "Darkfield 4000 DPI",
+            "battery_life": "70 days",
+            "connection": "Bluetooth or USB receiver"
+        },
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "MOU002",
+        "product_title": "Apple Magic Mouse 2",
+        "product_image": "https://i.ibb.co.com/gjtzcft/Apple-Magic-Mouse-2.jpg",
+        "category": "Wireless Mouse",
+        "price": 79.99,
+        "description": "Apple Magic Mouse 2 with multi-touch surface.",
+        "specification": {
+            "battery_life": "1 month",
+            "connection": "Bluetooth",
+            "weight": "99g"
+        },
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "product_id": "MOB003",
+        "product_title": "OnePlus 9 Pro",
+        "product_image": "https://i.ibb.co.com/YjQbNCQ/One-Plus-9-Pro.jpg",
+        "category": "Mobile Phone",
+        "price": 969.99,
+        "description": "OnePlus 9 Pro with Hasselblad camera and fast charging.",
+        "specification": {
+            "screen_size": "6.7 inches",
+            "camera": "48MP + 50MP",
+            "battery": "4500mAh",
+            "processor": "Snapdragon 888",
+            "RAM": "8GB",
+            "storage": "128GB"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "SW003",
+        "product_title": "Fitbit Versa 3",
+        "product_image": "https://i.ibb.co.com/bBLBT9h/Fitbit-Versa-3.webp",
+        "category": "Smartwatch",
+        "price": 229.99,
+        "description": "Fitbit Versa 3 with GPS and advanced sleep tracking.",
+        "specification": {
+            "screen_size": "1.58 inches",
+            "battery_life": "6+ days",
+            "water_resistant": "Yes",
+            "features": ["Heart Rate Monitor", "Sleep Tracking", "GPS"]
+        },
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "SPK003",
+        "product_title": "Ultimate Ears BOOM 3",
+        "product_image": "https://i.ibb.co.com/jgd41HF/Ultimate-Ears-BOOM-3.jpg",
+        "category": "Bluetooth Speaker",
+        "price": 149.99,
+        "description": "Ultimate Ears BOOM 3 with 360° sound and waterproof design.",
+        "specification": {
+            "battery_life": "15 hours",
+            "water_resistant": "IP67",
+            "frequency_response": "90 Hz – 20 kHz"
+        },
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "MOU003",
+        "product_title": "Microsoft Surface Arc Mouse",
+        "product_image": "https://i.ibb.co.com/NT6y6sc/Microsoft-Surface-Arc-Mouse.webp",
+        "category": "Wireless Mouse",
+        "price": 69.99,
+        "description": "Microsoft Surface Arc Mouse with ultra-slim design.",
+        "specification": {
+            "battery_life": "6 months",
+            "connection": "Bluetooth",
+            "weight": "82g"
+        },
+        "availability": false,
+        "rating": 4.2
+    },
+    {
+        "product_id": "MOB004",
+        "product_title": "Google Pixel 6 Pro",
+        "product_image": "https://i.ibb.co.com/bbGZkCr/Google-Pixel-6-Pro.jpg",
+        "category": "Mobile Phone",
+        "price": 899.99,
+        "description": "Google Pixel 6 Pro with a 50MP camera, 5G support, and Google's Tensor chip.",
+        "specification": {
+            "screen_size": "6.71 inches",
+            "camera": "50MP + 12MP",
+            "battery": "5000mAh",
+            "processor": "Google Tensor",
+            "RAM": "12GB",
+            "storage": "128GB"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "MOB005",
+        "product_title": "Xiaomi Mi 11 Ultra",
+        "product_image": "https://i.ibb.co.com/gW5mPWn/Xiaomi-Mi-11-Ultra.jpg",
+        "category": "Mobile Phone",
+        "price": 749.99,
+        "description": "Xiaomi Mi 11 Ultra with 120x zoom camera and AMOLED display.",
+        "specification": {
+            "screen_size": "6.81 inches",
+            "camera": "50MP + 48MP + 48MP",
+            "battery": "5000mAh",
+            "processor": "Snapdragon 888",
+            "RAM": "8GB",
+            "storage": "256GB"
+        },
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "product_id": "BUD003",
+        "product_title": "Sennheiser Momentum True Wireless 3",
+        "product_image": "https://i.ibb.co.com/VVjw2N4/Sennheiser-Momentum-True-Wireless-3.webp",
+        "category": "Airbuds",
+        "price": 299.99,
+        "description": "Sennheiser Momentum True Wireless 3 with superior sound quality and ANC.",
+        "specification": {
+            "noise_cancellation": "Yes",
+            "battery_life": "7 hours (earbuds), 28 hours (with case)",
+            "water_resistant": "IPX4"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "BUD004",
+        "product_title": "Jabra Elite 85t",
+        "product_image": "https://i.ibb.co.com/dmxTV1z/Jabra-Elite-85t.jpg",
+        "category": "Airbuds",
+        "price": 229.99,
+        "description": "Jabra Elite 85t with adjustable ANC and rich bass.",
+        "specification": {
+            "noise_cancellation": "Adjustable",
+            "battery_life": "5.5 hours (earbuds), 25 hours (with case)",
+            "water_resistant": "IPX4"
+        },
+        "availability": false,
+        "rating": 4.5
+    },
+    {
+        "product_id": "SW004",
+        "product_title": "Garmin Fenix 6 Pro",
+        "product_image": "https://i.ibb.co.com/zmNSd4w/Garmin-Fenix-6-Pro.jpg",
+        "category": "Smartwatch",
+        "price": 649.99,
+        "description": "Garmin Fenix 6 Pro with GPS, heart rate, and rugged design for outdoor adventures.",
+        "specification": {
+            "screen_size": "1.3 inches",
+            "battery_life": "14 days (smartwatch mode)",
+            "water_resistant": "Yes",
+            "features": ["GPS", "Heart Rate Monitor", "Sleep Tracking"]
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "SW005",
+        "product_title": "Huawei Watch GT 3",
+        "product_image": "https://i.ibb.co.com/tmcXmcG/Huawei-Watch-GT-3.jpg",
+        "category": "Smartwatch",
+        "price": 299.99,
+        "description": "Huawei Watch GT 3 with AMOLED display and 2-week battery life.",
+        "specification": {
+            "screen_size": "1.43 inches",
+            "battery_life": "14 days",
+            "water_resistant": "Yes",
+            "features": ["Heart Rate Monitor", "GPS", "Sleep Tracking"]
+        },
+        "availability": false,
+        "rating": 4.4
+    },
+    {
+        "product_id": "MOB006",
+        "product_title": "Sony Xperia 1 III",
+        "product_image": "https://i.ibb.co.com/NrfkdK6/Sony-Xperia-1-III.jpg",
+        "category": "Mobile Phone",
+        "price": 1299.99,
+        "description": "Sony Xperia 1 III with a 4K OLED display and advanced photography features.",
+        "specification": {
+            "screen_size": "6.5 inches",
+            "camera": "12MP triple camera with ZEISS optics",
+            "battery": "4500mAh",
+            "processor": "Snapdragon 888",
+            "RAM": "12GB",
+            "storage": "256GB"
+        },
+        "availability": true,
+        "rating": 4.7
+    }
+]
