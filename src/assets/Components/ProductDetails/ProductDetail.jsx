@@ -75,13 +75,9 @@ const ProductDetail = () => {
 
                         </div>
 
-                        <div className="rating bg-yellow-400">
+                        <div className="rating ">
                             <p className="flex">Rating <RiStarSLine />:{rating}</p>
-                            <input type="radio" name="rating-4" className="mask mask-star-2 bg-special-500" />
-                            <input type="radio" name="rating-4" className="mask mask-star-2 bg-special-500" defaultChecked />
-                            <input type="radio" name="rating-4" className="mask mask-star-2 bg-special-500" />
-                            <input type="radio" name="rating-4" className="mask mask-star-2 bg-special-500" />
-                            <input type="radio" name="rating-4" className="mask mask-star-2 bg-special-500" />
+                            
                         </div>
 
                         <div className="card-actions justify-between">
