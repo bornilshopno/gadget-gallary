@@ -11,7 +11,7 @@ const Card = ({ gadget }) => {
                 <figure>
                     <img
                         src={product_image} className=' h-40 cover'
-                        alt="Shoes" />
+                        alt="Gadget" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title text-sm">{product_title}</h2>

@@ -1,19 +1,31 @@
 import { IoMdHeartEmpty } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { DataContext } from "../Root/Root";
 
 
 
 const Navbar = () => {
+  const{pathname}=useLocation();
+  console.log(pathname);
+  const { data, updatedData, setUpdatedData,cartData, setCartData,wishlist, setWishlist } = useContext(DataContext);
+
     const items=<>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/stats">Statistics</NavLink>
-    <NavLink to="/dashboard">Dashboard</NavLink>
+    <NavLink className={({ isActive }) =>
+              `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+            } to="/">Home</NavLink>
+    <NavLink className={({ isActive }) =>
+              `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+            } to="/stats">Statistics</NavLink>
+    <NavLink className={({ isActive }) =>
+              `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+            } to="/dashboard">Dashboard</NavLink>
         </>
     return (
-        <div>
-       <div className="navbar bg-base-100">
+        <div className={`${(pathname==='/')?'bg-special-500 ':'bg-white'} `}>
+       <div className="navbar w-full mx-auto px-5 md:px-10 fixed z-50 backdrop-filter backdrop-blur-lg bg-opacity-50">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,18 +47,19 @@ const Navbar = () => {
   <div className="navbar-end">
   <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
-        <AiOutlineShoppingCart className="text-xl font-semibold border-2 rounded-full w-7 h-7" />
-          <span className="badge badge-sm indicator-item">8</span>
+        <AiOutlineShoppingCart className="text-xl font-semibold rounded-full w-7 h-7" />
+          <span className="badge badge-sm indicator-item">{cartData.length}</span>
         </div>
       </div>
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
-        <IoMdHeartEmpty className="text-xl font-semibold border-2 rounded-full w-7 h-7" />
-          <span className="badge badge-sm indicator-item">8</span>
+        <IoMdHeartEmpty className="text-xl font-semibold rounded-full w-7 h-7" />
+          <span className="badge badge-sm indicator-item">{wishlist.length}</span>
         </div>
       </div>
   </div>
 </div>
+<div className="h-16 "></div>
         </div>
     );
 };
