@@ -48,7 +48,7 @@
             "water_resistant": "IPX4"
         },
         "availability": true,
-        "rating": 4.7
+        "rating": 4.4
     },
     {
         "product_id": "BUD002",
@@ -79,7 +79,7 @@
             "features": ["ECG", "Blood Oxygen Sensor", "Heart Rate Monitor"]
         },
         "availability": true,
-        "rating": 4.8
+        "rating": 4.3
     },
     {
         "product_id": "SW002",
@@ -95,7 +95,7 @@
             "features": ["ECG", "Heart Rate Monitor", "Sleep Tracking"]
         },
         "availability": true,
-        "rating": 4.5
+        "rating": 4.2
     },
     {
         "product_id": "SPK001",
@@ -125,7 +125,7 @@
             "frequency_response": "70 Hz – 20 kHz"
         },
         "availability": false,
-        "rating": 4.7
+        "rating": 3.4
     },
     {
         "product_id": "CAM001",
@@ -140,7 +140,7 @@
             "focus": "Autofocus"
         },
         "availability": true,
-        "rating": 4.5
+        "rating": 4.4
     },
     {
         "product_id": "CAM002",
@@ -155,7 +155,7 @@
             "light": "Adjustable ring light"
         },
         "availability": true,
-        "rating": 4.3
+        "rating": 3.9
     },
     {
         "product_id": "MOU001",
@@ -170,7 +170,7 @@
             "connection": "Bluetooth or USB receiver"
         },
         "availability": true,
-        "rating": 4.9
+        "rating": 4.4
     },
     {
         "product_id": "MOU002",
@@ -203,7 +203,7 @@
             "storage": "128GB"
         },
         "availability": true,
-        "rating": 4.6
+        "rating": 3.4
     },
     {
         "product_id": "SW003",
@@ -219,7 +219,7 @@
             "features": ["Heart Rate Monitor", "Sleep Tracking", "GPS"]
         },
         "availability": true,
-        "rating": 4.5
+        "rating": 4.8
     },
     {
         "product_id": "SPK003",
@@ -267,7 +267,7 @@
             "storage": "128GB"
         },
         "availability": true,
-        "rating": 4.7
+        "rating": 4.4
     },
     {
         "product_id": "MOB005",
@@ -300,7 +300,7 @@
             "water_resistant": "IPX4"
         },
         "availability": true,
-        "rating": 4.8
+        "rating": 3.8
     },
     {
         "product_id": "BUD004",
@@ -315,7 +315,7 @@
             "water_resistant": "IPX4"
         },
         "availability": false,
-        "rating": 4.5
+        "rating": 4.4
     },
     {
         "product_id": "SW004",
@@ -365,6 +365,6 @@
             "storage": "256GB"
         },
         "availability": true,
-        "rating": 4.7
+        "rating": 4.4
     }
 ]

@@ -1,45 +1,41 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Banner from './Banner';
 import { DataContext } from '../Root/Root';
 import Cards from './Cards';
 import { useLoaderData } from 'react-router-dom';
 import BlankPage from './BlankPage';
+import { Helmet } from 'react-helmet-async';
 
 
 
 const Home = () => {
-  const { data, updatedData, setUpdatedData } = useContext(DataContext);
- 
- console.log(data.slice(0,9));
-  const infoCategory= useLoaderData();
-  const [category,setCategory]=useState('')
-  // const[status,setStatus]=useState('')
+  const { data, updatedData, setUpdatedData, cartData, setCartData, wishlist, setWishlist } = useContext(DataContext);
 
-  
+  const infoCategory= useLoaderData();
+  const [category,setCategory]=useState('all')
+ 
+
+  useEffect(()=>{
+    if(category==='all'){
+      setUpdatedData(data);
+          }
+   
+      else{
+        let selectedData=data.filter(gadgeted=>gadgeted.category===category);
+        setUpdatedData(selectedData);
+        }
+  } , [category, data, setUpdatedData])
 
   const categoryHandler=(status)=>{
     setCategory(status);
-    
-    if(category==='all'){
-      setUpdatedData(data);
-      
-    }
-    else if(category===''){
-      setUpdatedData(data.slice(0,9))
-    }
-
-      else{
-        let selectedData=data.filter(gadgeted=>gadgeted.category===status);
-        console.log(selectedData);
-        setUpdatedData(selectedData);
-        }
-
-    
+    console.log(status)
   }
   
       return (
         <div className='min-h-96 '>
-          
+          <Helmet>
+          <title>Gadget Heaven || Home</title>
+          </Helmet>
           <Banner></Banner>
           <h2 className='text-5xl text-center font-semibold py-5 text-gray-600'>Explore Cutting Edge Gadgets</h2>
           <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>

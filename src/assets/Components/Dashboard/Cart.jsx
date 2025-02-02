@@ -16,12 +16,11 @@ useEffect(()=>{
 
 
 
+const sortHandler = () => {
+    const sortedCart = [...cartData].sort((a, b) => b.price - a.price); 
+    setCartData(sortedCart); 
+};
 
-const sortHandler =()=>{
-    const sortedCart= cartData.sort((a,b)=> b.price-a.price);
-    setCartData(sortedCart);
-
-}
 
 const[isVisible,setIsVisible]=useState(false);
 

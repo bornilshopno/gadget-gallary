@@ -7,6 +7,8 @@ import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../Root/Root";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
+import Rating from "./Rating";
 
 
 
@@ -38,12 +40,15 @@ const ProductDetail = () => {
 
     return (
         <div className='relative mb-96 md:mb-80'>
+            <Helmet>
+            <title>Gadget Heaven || {product_title}</title>
+            </Helmet>
             <div className='space-y-3 md:space-y-8 flex flex-col items-center p-20 pb-60 bg-special-500 '>
                 <h1 className='text-center text-5xl max-w-5xl mx-auto text-white'>Product Details</h1>
                 <p className='text-center max-w-3xl mx-auto text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
 
             </div>
-            <div className=' border-white rounded-lg absolute top-[60%] w-10/12 lg:w-7/12 left-[50%] -translate-x-1/2 z-50'>
+            <div className=' border-white rounded-lg absolute top-[60%] w-10/12 lg:w-7/12 left-[50%] -translate-x-1/2 z-40'>
                 <div className="card md:card-side bg-base-100 shadow-xl p-1">
                 <div className="text-end">
                 <Link to="/" className="w-10 ">
@@ -60,11 +65,11 @@ const ProductDetail = () => {
 
                         <h2 className="card-title">{product_title}</h2>
                         <h3 className="text-left">Price : ${price}</h3>
-                        <button className="text-left">
+                        <button className={`${availability?"text-green-600 p-2 border-2 border-special-500":"text-gray-600 border-2"} w-52 rounded-3xl`}>
                             {availability ? "Stock Available" : "Out of stock"}
                         </button>
-                        <div className="h-52">
-                            <h2>Specification:</h2>
+                        <div className="">
+                            <h2 className="underline text-special-500">Specification:</h2>
 
 
                             {specificationKeys.map((key, idx) => <p key={idx}>
@@ -77,7 +82,7 @@ const ProductDetail = () => {
 
                         <div className="rating ">
                             <p className="flex">Rating <RiStarSLine />:{rating}</p>
-                            
+                            <Rating rate={rating}></Rating>
                         </div>
 
                         <div className="card-actions justify-between">

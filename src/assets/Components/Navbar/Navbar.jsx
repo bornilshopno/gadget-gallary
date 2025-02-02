@@ -9,7 +9,6 @@ import { DataContext } from "../Root/Root";
 
 const Navbar = () => {
   const{pathname}=useLocation();
-  console.log(pathname);
   const { data, updatedData, setUpdatedData,cartData, setCartData,wishlist, setWishlist } = useContext(DataContext);
 
     const items=<>
@@ -22,10 +21,14 @@ const Navbar = () => {
     <NavLink className={({ isActive }) =>
               `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
             } to="/dashboard">Dashboard</NavLink>
+
+<NavLink className={({ isActive }) =>
+              `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+            } to="/offer">Offer!</NavLink>
         </>
     return (
-        <div className={`${(pathname==='/')?'bg-special-500 ':'bg-white'} `}>
-       <div className="navbar w-full mx-auto px-5 md:px-10 fixed z-50 backdrop-filter backdrop-blur-lg bg-opacity-50">
+        <div className={`${(pathname==='/' || pathname==="/dashboard")?'bg-special-500 ':'bg-white'} `}>
+       <div className="navbar w-full mx-auto px-5 md:px-10 fixed z-50 backdrop-filter backdrop-blur-lg bg-opacity-50 border-b">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

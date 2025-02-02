@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Cart from './Cart';
 import WishList from './WishList';
+import { Helmet } from 'react-helmet-async';
 
 const Dashboard = () => {
   const [state,setState]=useState('cart')
@@ -11,6 +12,9 @@ const Dashboard = () => {
   
     return (
         <div>
+          <Helmet>
+          <title>Gadget Heaven || Dashboard</title>
+          </Helmet>
          <div className='relative'>
           <div className='space-y-3 md:space-y-8 flex flex-col items-center p-20  bg-special-500 '>
             <div className='space-y-3 md:space-y-8'>

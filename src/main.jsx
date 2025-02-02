@@ -12,6 +12,8 @@ import Home from './assets/Components/Home/Home';
 import Dashboard from './assets/Components/Dashboard/Dashboard';
 import Stats from './assets/Components/Stats/Stats';
 import ProductDetail from './assets/Components/ProductDetails/ProductDetail';
+import Offer from './assets/Components/Offer/Offer';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
         element: <Stats></Stats>
       },
       {
+        path:'/offer',
+        element: <Offer></Offer>
+      },
+      {
         path:'/:product_id',
         // loader:({params})=> fetch(`/gadgetData.json/${params.product_id}`),
         loader: async ({ params }) => {
@@ -50,6 +56,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+   <HelmetProvider>
+   <RouterProvider router={router} />
+   </HelmetProvider>
   </StrictMode>,
 )
